@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Modest Life</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="img/Modest Life logo.png" alt="" height="50px"></div>
+            <div class="logo_text">
+                <P>Modest Life</P>
+            </div>
+            <div class="nav_list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="services"><a href="#">Services</a>
+                        <ul class="dropdown">
+                            <li class="product"><a href="#">Products</a>
+                                <ul class="product_dropdown">
+                                    <li><a href="#">Deep Sea</a></li>
+                                    <li><a href="#">Sunny Orange</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Vision</a></li>
+                            <li><a href="#">Values</a></li>
+                        </ul>
+                    </li>
+                    <li class="login_btn" style="z-index:5;"><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <label for="chkmenu"><img src="img/menu (1).png" alt="" width="35px"></label>
+                <input type="checkbox" id="chkmenu">
+                <ul class="sidebar">
+                    <li class="mini_product" id="product_btn"><a href="#">Products</a>
+                        <ul class="product_mini_dropdown">
+                            <li><a href="#">Deep Sea</a></li>
+                            <li><a href="#">Sunny Orange</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li class="login_btn"><a href="#">Login</a></li>
+                </ul>
+                <!-- <img src="img/menu (1).png" alt="" width="35px"> -->
+            </div>
+        </nav>
+    </header>
+    <main class="hero1">
+
+
+
+        <div class="left_para">
+            <p class="headline">Refresh your youth<br>
+                with our soft<br> drinks!</p>
+            <p class="subheading">Experience the energy and fizz of our soft drinks<br>
+                Enjoy the bold and delicious flavors of our soft drinks</p>
+            <div class="follow">
+                <p>Follow Us On</p>
+                <div class="icons">
+                    <a href="#"><img src="img/twitter.png" width="30px" alt=""></a>
+                    <a href=https://www.instagram.com/__rubal_09/><img src="img/instagram.png" width="30px" alt=""></a>
+                    <a href="#"><img src="img/facebook.png" width="30px" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="right_para">
+            <p class="Summer_heading">Summer</p>
+            <div class="features">
+                <div class="deepcool">
+                    <img src="img/Aha-Soft-Standard-New-Year-Snowflake.256.png" alt="" width="50px">
+                    <p>Deep Cool</p>
+                </div>
+                <div class="deepcool">
+                    <img src="img/energy.png" alt="" width="43px">
+                    <p>Energy Boosterl</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="hero2">
+        <a href="#"><img src="img/chevron.png" width="38px" alt=""></a>
+    </main>
+    <main class="hero3">
+        <div class="text_area">
+            <p class="text1">Unleash your inner</p>
+            <P class="text2">Youth</P>
+            <p class="text3">with our range of soft drinks</p>
+            <button type="button" class="trynow_btn">Try Now</button>
+        </div>
+
+    </main>
+    <script>
+
+        const myElement = document.querySelector('#product_btn');
+
+        myElement.addEventListener('click', function () {
+
+            myElement.classList.add('product_mini_dropdown_show');
+        });
+
+    </script>
+</body>
+
+</html>

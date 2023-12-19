@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modest - Post</title>
+    <link rel="stylesheet" href="./css/modest_admin_post.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="img/modest life logo new.png" alt="" height="60px"></div>
+            <div class="logo_text">
+                <P>Modest Life</P>
+            </div>
+            <div class="nav_list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="services"><a href="#">Services</a>
+                        <ul class="dropdown">
+                            <li class="product"><a href="#">Products</a>
+                                <ul class="product_dropdown">
+                                    <li><a href="#">Deep Sea</a></li>
+                                    <li><a href="#">Sunny Orange</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Vision</a></li>
+                            <li><a href="#">Values</a></li>
+                        </ul>
+                    </li>
+                    <li class="login_btn" style="z-index:5;"><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <label for="chkmenu"><img src="img/menu (1).png" alt="" width="35px"></label>
+                <input type="checkbox" id="chkmenu">
+                <ul class="sidebar">
+                    <li class="mini_product" id="product_btn"><a href="#">Products</a>
+                        <ul class="product_mini_dropdown">
+                            <li><a href="#">Deep Sea</a></li>
+                            <li><a href="#">Sunny Orange</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li class="login_btn"><a href="#">Login</a></li>
+                </ul>
+                <!-- <img src="img/menu (1).png" alt="" width="35px"> -->
+            </div>
+        </nav>
+    </header>
+        <main class="hero1">
+            <h1>Welcome , User</h1>
+            
+            <a href="#" class="add_post">Add New Post<img src="img/add.png" alt="" width="30px"></a>
+            <h4>Posts</h4>
+    
+            <table class="GeneratedTable">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>thumbnail</th>
+                    <th>Content</th>
+                    <th>Category</th>
+                    <th>Created</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><img src="img/science behind.png" alt="" width="90px"></td>
+                    <td><h3>Title</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, aspernatur accusantium suscipit nihil corrupti porro nostrum officiis minus facere, quaerat possimus?</p></td>
+                    <td>123456789</td>
+                    <td>23/.9/2023</td>
+                    <td><div class="cta">
+                        <a href="#"><img src="img/edit.png" alt="edit" width="35px"></a>
+                        <a href="#"><img src="img/delete.png" alt="delete" width="40px"></a>    
+                    </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+    </main>
+    <footer>
+        <section>
+            <figure><img src="./img/modest life logo new.png" alt="" height="60px"></figure>
+            <figcaption>Modest Life</figcaption>
+        </section>
+        <section class="footer_text">
+            <h2>Social</h2>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </section>
+        <section class="footer_text">
+            <h2>Important Link</h2>
+            <ul>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Disclaimer</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
