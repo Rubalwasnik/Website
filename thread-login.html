@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thread</title>
+  <link rel="stylesheet" href="css/thread.login.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="img/thread/thread logo.png" alt="" width="41px" />
+    </div>
+    <p>Thread</p>
+    <input type="search" placeholder="Search" class="searchbar" />
+    <nav>
+      <ul class="navlist">
+        <li><a href="Thread.html">Home</a></li>
+        <li><a href="#">Podcast</a></li>
+        <li><a href="threadbloglist.html">Blog</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="login-btn">Login</a>
+  </header>
+  <main class="hero1">
+    <div class="section1">
+      <h2 class="login-text">Login</h2>
+      <form action="" id="myForm">
+        <input type="text" id="email" placeholder="Email" class="Email" >
+        <input type="password" id="password" placeholder="Password" class="Password" >
+        <p><a href="#">Forget Password ?</a> </p>
+        <button type="submit" id="btn" class="btn">Sign In</button>
+        <!-- <a href="#" class="btn">Sign In</a> -->
+      </form>
+    </div>
+    <!-- <div class="section2">
+      <h2 class="login-text">Register</h2>
+      <input type="email" placeholder="Email" class="Email">
+      <input type="password" placeholder="Password" class="Password">
+      <div class="terms">
+        <input type="checkbox" required>
+        <a href="#">I accept Terms and Conditions</a>
+      </div>
+      <a href="#" class="btn">Sign Up</a>
+    </div> -->
+  </main>
+  <main class="hero2">
+    <div class="Google_signin">
+      <img src="img/google.png" alt="" width="20px">
+      <p><a href="#"></a>Sign in With Google</p>
+    </div>
+  </main>
+  <main class="admin_login">
+    <a href="admin-blog.html">Login as a Admin</a>
+  </main>
+
+  <footer>
+    <div class="box">
+      <img src="img/thread/thread logo.png" alt="logo" width="40px">
+      <p>Thread</p>
+    </div>
+    <div class="box">
+      <h3>Social</h3>
+      <ul>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Linkedin</a></li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Important Links</h3>
+      <ul>
+        <li><a href="">Terms and Condition</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Disclaimer</a></li>
+      </ul>
+    </div>
+  </footer>
+  <footer>&copy; Copyright 2023- All Right Reserverd</footer>
+  <Script>
+    const form = document.getElementById("myForm");
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+
+
+    form.addEventListener("submit", (event))
+
+        function event() {
+
+
+            if (emailInput.value === "" && emailInput.value === "") {
+ 
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            if (passwordInput.value.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                return;
+            }
+            else
+            {
+
+                alert("Form submitted successfully!");
+                
+            }
+            
+        };
+
+
+  </Script>
+</body>
